@@ -1,0 +1,30 @@
+main{
+    width: 1320px;
+    
+}
+
+.hero-section{
+    background-image:url('../images/Banner Image.png');
+    height: 600px;
+}
+
+.hero-section h1{
+    color: aliceblue;
+}
+
+.categories{
+
+}
+
+.categories h1, h2, h3{
+    /* text-align: center; */
+}
+
+.party{
+    background-image:url('../images/Vectorrr.png');
+    height: 600px;
+}
+
+.party h1, p{
+    color: aliceblue;
+}
