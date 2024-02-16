@@ -1,5 +1,20 @@
+.inter{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+  }
+  
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body h1, h2, h3, h4, h5, p{
     margin: 0;
+    font-family: inter;
 }
 main{
     width: 1320px;
@@ -9,23 +24,68 @@ main{
 .hero-section{
     background-image:url('../images/Banner Image.png');
     height: 600px;
+    position: relative;
+    
+}
+.hero-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    
 }
 
+.hero-section h3{
+    color: aliceblue;
+font-size: 36px;
+font-weight: 500;
+}
 .hero-section h1{
     color: aliceblue;
+    text-align: center;
+font-size: 64px;
+font-weight: 600;
+
+}
+
+.hero-section-text {
+    position: relative;
+    text-align: center;
+    padding-top: 200px;
 }
 
 .categories{
-
+    text-align: center;
+    margin: 100px 0;
 }
 
-.categories h1, h2, h3{
-    /* text-align: center; */
+.categories h1{
+    margin-bottom: 20px;
+    font-size: 64px;
+}
+.categories h3{
+    font-size: 16px;
+}
+.categories h2{
+    font-size: 28px;
+}
+.categories h1, h3{
+    color: red;
+}
+.categories img {
+    width: 802px;
+    height: 500px;
+    margin-top: 40px;
 }
 
 .party{
     background-image:url('../images/Vectorrr.png');
     height: 600px;
+    margin: 0 0 50px 0;
 }
 
 .party h1{
@@ -38,7 +98,12 @@ main{
     border-radius: 15px;
 }
 
+.subscribe h1{
+}
+
 footer{
+    width: 1600px;
     height: 609px;
-    background-color: #070211;
+    background-color: #ae94e0;
+
 }
